@@ -6,12 +6,12 @@
     //    application - the corresponding locale name in your system. This value is used in the translation commit message
     "locales": [
          {
-             "smartling" : "en-US",
-             "application" : "en-US"
+             "smartling" : "en-us",
+             "application" : "en-us"
          },
          {
-             "smartling" : "de-DE",
-             "application" : "de-DE"
+             "smartling" : "de-de",
+             "application" : "de-de"
          }
      ],
 
@@ -40,13 +40,14 @@
      "resourceSets": [
          {
              "type"                      : "gettext",
-             "authorizeContent"          : "true",
+             "authorizeContent"          : "false",
              "pathRegex"                 : "(?<prePath>.*)\\/locale\\/en-us\\/(?<postPath>.*)\\/[^/]+.po",
              "translationPathExpression" : "${prePath}/${locale}/${postPath}/${originalFile.name}",
              "translationCommitMessage"  : "Task TRN-18 translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}"
          },
          {
             "type"                      : "json",
+            "authorizeContent"          : "false",
             "pathRegex"                 : "src\\/frontend\\/locale\\/en-us/(?<path>.*)\\/[^/]+.json",
             "translationPathExpression" : "src/frontend/locale/${locale}/${path}/${originalFile.name}",
          }
