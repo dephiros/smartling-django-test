@@ -1,0 +1,1 @@
+{"smartling": {"string_format": "icu"}, "{0, plural, one {There's # message in your inbox} other {There're # messages in your inbox}}": "{0, plural, one {There's # message in your inbox} other {There're # messages in your inbox}}", "Hello React": "Hello React"}
