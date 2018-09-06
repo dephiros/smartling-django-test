@@ -6,7 +6,7 @@
     //    application - the corresponding locale name in your system. This value is used in the translation commit message
     "locales": [
          {
-             "smartling" : "en-US",
+             "smartling" : "en-us",
              "application" : "en-us"
          },
          {
